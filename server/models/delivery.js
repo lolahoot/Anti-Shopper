@@ -2,8 +2,8 @@ const mongoose = require ("mongoose");
 const Schema = mongoose.Schema;
 
 const deliverySchema = new Schema({
-  time: Date
+  time: Date.now().getTime()
 })
 
 
-module.exports = mongoose.model("Delivery", deliverySchema);
+module.exports = mongoose.model("DeliveryTime", deliverySchema);

@@ -5,9 +5,9 @@ import "./Navbar.css";
 export default function Navbar(props) {
   return (
     <nav className="navbar">
-      <link to="/">Log In</link>
-      <link to="/profile">Profile</link>
-      <link to ="/shopping-list">Shopping List</link>
+      <Link to="/" className="navbar">Log In</Link>
+      <Link to="/profile" className="navbar">Profile</Link>
+      <Link to ="/shopping-list" className="navbar">Shopping List</Link>
     </nav>
   )
 }

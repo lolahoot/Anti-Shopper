@@ -7,4 +7,4 @@ const shopperSchema = new Schema({
   photo: URL
 });
 
-module.exports = mongoose.model("AddShopper", shopperSchema);
+module.exports = mongoose.model("CreateShopper", shopperSchema);

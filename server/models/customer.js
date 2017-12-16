@@ -1,4 +1,4 @@
-const mongoose = require ("mongoose";)
+const mongoose = require ("mongoose");
 const Schema = mongoose.Schema;
 
 const customerSchema = new Schema ({
@@ -15,5 +15,6 @@ const customerSchema = new Schema ({
     userName: String,
     password: String
   }
+});
 
-  module.exports = mongoose.model("AddCustomer", customerSchema);
+  module.exports = mongoose.model("CreateCustomer", customerSchema);

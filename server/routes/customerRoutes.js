@@ -2,9 +2,11 @@ const express = require("express");
 const customerRoutes = express.Router();
 const Customer = require("../models/customer");
 
+
 customerRoutes.get("/", (req, res) => {
   Customer.find((err, customers) => {
     if (err) return res.status(500).send(err);
+    res.send(customers);
   });
 });
 
@@ -29,3 +31,5 @@ customerRoutes.put("/:id", (req, res) => {
       res.send(customer);
   });
 });
+
+module.exports = customerRoutes;

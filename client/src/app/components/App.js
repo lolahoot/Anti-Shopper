@@ -3,7 +3,7 @@ import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 import {Switch, Route} from "react-router-dom";
 import AddCustomer from "./customer/AddCustomer";
-import './App.css';
+import '../../index.css';
 
 class App extends Component {
   render() {
